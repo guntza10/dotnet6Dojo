@@ -8,5 +8,7 @@ namespace SuperHeroApi.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<SuperHero> SuperHeroes { get; set; }
+        public DbSet<Job> Jobs { get; set; }
+        public DbSet<Student> Students { get; set; }
     }
 }
